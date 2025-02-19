@@ -1,11 +1,7 @@
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <h1>Project</h1>
-    </>
-  );
+  return <>Main App</>;
 }
 
 export default App;
