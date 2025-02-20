@@ -18,18 +18,23 @@ const Search = () => {
   };
 
   return (
-    <div>
-      <h1>University Search</h1>
+    <div className="w-full max-w-xs space-y-4">
+      <span className="text-2xl">University Search</span>
+      <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
+      <input
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        placeholder="Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
       <div>
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          Country
+        </label>
         <input
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </div>
-      <div>
-        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
           placeholder="Country"
           value={country}
