@@ -6,6 +6,8 @@ const Header = () => {
     <div className="space-x-2">
       <Link to="/">Home</Link>
       <Link to="/team">Team</Link>
+      <Link to="/about">About</Link>
+      <Link to="/Resources">Resources</Link>
     </div>
   );
 };
